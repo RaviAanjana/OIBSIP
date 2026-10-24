@@ -1,0 +1,403 @@
+/* ===================================
+   CSS Reset and Base Styles
+=================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+        sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    line-height: 1.6;
+    color: #2d3748;
+}
+
+/* ===================================
+   Container
+=================================== */
+.container {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* ===================================
+   Header
+=================================== */
+.header {
+    text-align: center;
+    margin-bottom: 2rem;
+    color: #ffffff;
+}
+
+.app-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.app-subtitle {
+    font-size: 0.95rem;
+    font-weight: 400;
+    opacity: 0.95;
+}
+
+/* ===================================
+   Converter Card
+=================================== */
+.converter-card {
+    background-color: #ffffff;
+    border-radius: 16px;
+    box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    animation: fadeInUp 0.6s ease-out;
+}
+
+/* ===================================
+   Form Styles
+=================================== */
+#converterForm {
+    margin-bottom: 2rem;
+}
+
+.input-group,
+.unit-group {
+    margin-bottom: 1.5rem;
+}
+
+.input-label {
+    display: block;
+    font-size: 0.9rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 0.5rem;
+}
+
+.temperature-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    transition: all 0.3s ease;
+    background-color: #f7fafc;
+}
+
+.temperature-input:hover {
+    border-color: #cbd5e0;
+}
+
+.temperature-input:focus {
+    outline: none;
+    border-color: #667eea;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.temperature-input::placeholder {
+    color: #a0aec0;
+}
+
+.input-help {
+    display: block;
+    font-size: 0.8rem;
+    color: #718096;
+    margin-top: 0.4rem;
+}
+
+.error-message {
+    display: block;
+    font-size: 0.85rem;
+    color: #e53e3e;
+    font-weight: 500;
+    margin-top: 0.4rem;
+    min-height: 1.2rem;
+}
+
+/* ===================================
+   Select Dropdown
+=================================== */
+.unit-select {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    border: 2px solid #e2e8f0;
+    border-radius: 10px;
+    background-color: #f7fafc;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    appearance: none;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23667eea' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3cpolyline points='6 9 12 15 18 9'%3e%3c/polyline%3e%3c/svg%3e");
+    background-repeat: no-repeat;
+    background-position: right 0.7rem center;
+    background-size: 1.5rem;
+    padding-right: 2.5rem;
+}
+
+.unit-select:hover {
+    border-color: #cbd5e0;
+}
+
+.unit-select:focus {
+    outline: none;
+    border-color: #667eea;
+    background-color: #ffffff;
+    box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
+}
+
+.unit-select option {
+    padding: 0.5rem;
+}
+
+/* ===================================
+   Convert Button
+=================================== */
+.convert-btn {
+    width: 100%;
+    padding: 0.9rem;
+    font-size: 1rem;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    color: #ffffff;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.convert-btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 25px rgba(102, 126, 234, 0.5);
+}
+
+.convert-btn:active {
+    transform: translateY(0);
+}
+
+.convert-btn:focus {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}
+
+/* ===================================
+   Results Section
+=================================== */
+.results-section {
+    margin-bottom: 1.5rem;
+}
+
+.results-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+    color: #2d3748;
+    margin-bottom: 1rem;
+    text-align: center;
+}
+
+.results-grid {
+    display: grid;
+    gap: 0.8rem;
+}
+
+.result-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.9rem 1.2rem;
+    background: linear-gradient(90deg, #f7fafc 0%, #edf2f7 100%);
+    border-radius: 10px;
+    border-left: 4px solid #667eea;
+    transition: all 0.3s ease;
+}
+
+.result-card:hover {
+    background: linear-gradient(90deg, #edf2f7 0%, #e2e8f0 100%);
+    transform: translateX(5px);
+}
+
+.result-unit {
+    font-size: 0.9rem;
+    font-weight: 500;
+    color: #4a5568;
+}
+
+.result-value {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: #667eea;
+    font-family: 'Courier New', monospace;
+}
+
+/* ===================================
+   Validation Section
+=================================== */
+.validation-section {
+    min-height: 2rem;
+}
+
+.validation-message {
+    padding: 0.8rem 1rem;
+    border-radius: 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    text-align: center;
+    display: none;
+}
+
+.validation-message.error {
+    display: block;
+    background-color: #fed7d7;
+    color: #c53030;
+    border: 1px solid #fc8181;
+}
+
+.validation-message.success {
+    display: block;
+    background-color: #c6f6d5;
+    color: #2f855a;
+    border: 1px solid #68d391;
+}
+
+/* ===================================
+   Footer
+=================================== */
+.footer {
+    text-align: center;
+    color: #ffffff;
+    font-size: 0.8rem;
+    opacity: 0.9;
+    padding: 1rem 0;
+}
+
+.footer p {
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* ===================================
+   Animations
+=================================== */
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* ===================================
+   Responsive Design - Tablet
+=================================== */
+@media (max-width: 640px) {
+    body {
+        padding: 1.5rem 0.8rem;
+    }
+    
+    .app-title {
+        font-size: 1.8rem;
+    }
+    
+    .app-subtitle {
+        font-size: 0.9rem;
+    }
+    
+    .converter-card {
+        padding: 1.5rem;
+        border-radius: 12px;
+    }
+}
+
+/* ===================================
+   Responsive Design - Mobile
+=================================== */
+@media (max-width: 480px) {
+    body {
+        padding: 1rem 0.6rem;
+    }
+    
+    .header {
+        margin-bottom: 1.5rem;
+    }
+    
+    .app-title {
+        font-size: 1.6rem;
+    }
+    
+    .converter-card {
+        padding: 1.2rem;
+    }
+    
+    .input-label {
+        font-size: 0.85rem;
+    }
+    
+    .temperature-input,
+    .unit-select {
+        font-size: 0.95rem;
+        padding: 0.7rem 0.9rem;
+    }
+    
+    .convert-btn {
+        font-size: 0.95rem;
+        padding: 0.8rem;
+    }
+    
+    .results-title {
+        font-size: 1.1rem;
+    }
+    
+    .result-card {
+        padding: 0.8rem 1rem;
+    }
+    
+    .result-unit {
+        font-size: 0.85rem;
+    }
+    
+    .result-value {
+        font-size: 1rem;
+    }
+    
+    .footer {
+        font-size: 0.75rem;
+    }
+}
+
+/* ===================================
+   Accessibility
+=================================== */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+    }
+}
+
+:focus-visible {
+    outline: 2px solid #667eea;
+    outline-offset: 2px;
+}

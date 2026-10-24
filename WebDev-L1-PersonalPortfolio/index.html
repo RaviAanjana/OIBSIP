@@ -1,0 +1,551 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Personal Portfolio Website - Oasis Infobyte Web Development & Designing Internship Level 1 Task 2"
+    />
+    <title>Ravi Aanjana - Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Font Awesome for icons (placeholder usage) -->
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <header class="navbar">
+      <nav class="nav-container">
+        <div class="nav-logo">
+          <a href="#home">Ravi Aanjana</a>
+        </div>
+        <ul class="nav-menu" id="navMenu">
+          <li class="nav-item">
+            <a href="#home" class="nav-link">Home</a>
+          </li>
+          <li class="nav-item">
+            <a href="#about" class="nav-link">About</a>
+          </li>
+          <li class="nav-item">
+            <a href="#skills" class="nav-link">Skills</a>
+          </li>
+          <li class="nav-item">
+            <a href="#projects" class="nav-link">Projects</a>
+          </li>
+          <li class="nav-item">
+            <a href="#contact" class="nav-link">Contact</a>
+          </li>
+        </ul>
+        <button
+          class="nav-toggle"
+          id="navToggle"
+          aria-label="Toggle navigation menu"
+        >
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section id="home" class="hero">
+        <div class="container">
+          <div class="hero-content">
+            <div class="hero-image-container">
+              <div class="hero-profile-placeholder">
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 300 300"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="Profile photo placeholder"
+                >
+                  <circle cx="150" cy="150" r="150" fill="#e0e7ff" />
+                  <circle
+                    cx="150"
+                    cy="120"
+                    r="50"
+                    fill="#6366f1"
+                    opacity="0.7"
+                  />
+                  <path
+                    d="M80 250 C80 200, 220 200, 220 250 L220 300 L80 300 Z"
+                    fill="#6366f1"
+                    opacity="0.7"
+                  />
+                </svg>
+              </div>
+            </div>
+            <div class="hero-text">
+              <p class="hero-greeting">Hello, I'm</p>
+              <h1 class="hero-name">Ravi Aanjana</h1>
+              <h2 class="hero-title">
+                Frontend Developer | React.js & React Native
+              </h2>
+              <p class="hero-intro">
+                [Write a short introduction about yourself here. Replace this
+                with your actual background, passion for development, and what
+                you bring to the table.]
+              </p>
+              <div class="hero-cta">
+                <a href="#projects" class="btn btn-primary">View My Work</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Me Section -->
+      <section id="about" class="about">
+        <div class="container">
+          <h2 class="section-title">About Me</h2>
+          <div class="about-content">
+            <div class="about-text">
+              <h3>Background</h3>
+              <p>
+                I hold a Bachelor of Engineering (B.E.) in Computer Science
+                Engineering from LNCTS, RGPV University. My journey in software
+                development began with a strong interest in programming and
+                problem-solving, which gradually evolved into a passion for
+                building web, mobile, backend, AI-powered, and interactive
+                applications. Over the years, I have gained professional
+                experience developing scalable mobile and web applications using
+                React Native, React.js, JavaScript, TypeScript, Firebase, Redux,
+                and modern frontend technologies. I have worked on projects
+                involving authentication systems, real-time communication, API
+                integrations, cloud services, database management, performance
+                optimization, and responsive user interfaces. In addition to
+                frontend and mobile development, I also work as a Backend
+                Developer using Node.js, Express.js, MongoDB, Firestore, and
+                RESTful APIs. I enjoy designing efficient backend architectures,
+                managing databases, and building secure, scalable server-side
+                solutions. I am also exploring AI-powered application
+                development and game development with Unity. I regularly
+                leverage modern AI tools such as ChatGPT, Gemini, Claude, GitHub
+                Copilot, Cursor, and OpenAI APIs to enhance productivity,
+                automate workflows, accelerate development, and build
+                intelligent software solutions. My passion for technology drives
+                me to continuously learn and adapt to new tools, frameworks, and
+                industry trends while creating applications that deliver
+                meaningful experiences to users.
+              </p>
+
+              <h3>Career Goals</h3>
+              <p>
+                My goal is to become a highly skilled Full Stack, Mobile, AI,
+                and Game Developer capable of building end-to-end software
+                products that solve real-world challenges. I aspire to work on
+                innovative projects involving modern web technologies, mobile
+                applications, cloud platforms, artificial intelligence, and
+                interactive 3D experiences. In the short term, I aim to
+                strengthen my expertise in React Native, React.js, Node.js,
+                Express.js, MongoDB, Firebase, Unity, and AI-driven application
+                development. I am particularly interested in integrating AI
+                capabilities into mobile and web applications to create smarter
+                and more personalized user experiences. In the long term, I
+                aspire to grow into a Senior Software Engineer and Technical
+                Architect role, leading the development of scalable products and
+                mentoring development teams. I want to contribute to
+                cutting-edge solutions in artificial intelligence, cloud
+                computing, mobile technologies, and game development while
+                building products that positively impact millions of users
+                worldwide. I am committed to continuous learning, innovation,
+                and leveraging emerging technologies to create modern,
+                high-performance, and user-centric digital solutions that drive
+                both business value and technological advancement.
+              </p>
+            </div>
+            <div class="about-image">
+              <div class="about-image-placeholder">
+                <svg
+                  width="100%"
+                  height="100%"
+                  viewBox="0 0 400 500"
+                  xmlns="http://www.w3.org/2000/svg"
+                  aria-label="About me illustration"
+                >
+                  <rect width="400" height="500" fill="#f1f5f9" />
+                  <rect
+                    x="50"
+                    y="80"
+                    width="300"
+                    height="80"
+                    rx="10"
+                    fill="#6366f1"
+                    opacity="0.8"
+                  />
+                  <rect
+                    x="70"
+                    y="100"
+                    width="260"
+                    height="15"
+                    rx="7"
+                    fill="#ffffff"
+                  />
+                  <rect
+                    x="70"
+                    y="130"
+                    width="180"
+                    height="10"
+                    rx="5"
+                    fill="#ffffff"
+                    opacity="0.8"
+                  />
+                  <rect
+                    x="50"
+                    y="200"
+                    width="140"
+                    height="120"
+                    rx="10"
+                    fill="#10b981"
+                    opacity="0.8"
+                  />
+                  <rect
+                    x="210"
+                    y="200"
+                    width="140"
+                    height="50"
+                    rx="10"
+                    fill="#f59e0b"
+                    opacity="0.8"
+                  />
+                  <rect
+                    x="210"
+                    y="270"
+                    width="140"
+                    height="50"
+                    rx="10"
+                    fill="#ef4444"
+                    opacity="0.8"
+                  />
+                  <rect
+                    x="50"
+                    y="350"
+                    width="300"
+                    height="60"
+                    rx="10"
+                    fill="#8b5cf6"
+                    opacity="0.8"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills Section -->
+      <section id="skills" class="skills">
+        <div class="container">
+          <h2 class="section-title">My Skills</h2>
+          <p class="section-subtitle">Technologies and tools I work with</p>
+          <div class="skills-grid">
+            <div class="skill-card">
+              <div class="skill-icon">🌐</div>
+              <h3>Frontend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">HTML5</span>
+                <span class="skill-tag">CSS3</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">Redux</span>
+                <span class="skill-tag">BootStrap</span>
+                <span class="skill-tag">JavaScript</span>
+                <span class="skill-tag">React/Vue/etc</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">⚙️</div>
+              <h3>Backend</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Node.js</span>
+                <span class="skill-tag">Firebase</span>
+                <span class="skill-tag">MongoDB</span>
+                <span class="skill-tag">Express</span>
+                <span class="skill-tag">SQLLite</span>
+              </div>
+            </div>
+            <div class="skill-card">
+              <div class="skill-icon">🛠️</div>
+              <h3>Tools & Others</h3>
+              <div class="skill-tags">
+                <span class="skill-tag">Git & GitHub</span>
+                <span class="skill-tag">VS Code</span>
+                <span class="skill-tag">Figma</span>
+                <span class="skill-tag">Responsive Design</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="projects">
+        <div class="container">
+          <h2 class="section-title">My Projects</h2>
+          <p class="section-subtitle">Some of my recent work</p>
+          <div class="projects-grid">
+            <article class="project-card">
+              <div class="project-image">
+                <div class="project-image-placeholder">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 400 250"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="Project 1 placeholder"
+                  >
+                    <rect width="400" height="250" fill="#dbeafe" />
+                    <rect
+                      x="30"
+                      y="40"
+                      width="340"
+                      height="30"
+                      rx="5"
+                      fill="#3b82f6"
+                    />
+                    <rect
+                      x="30"
+                      y="90"
+                      width="160"
+                      height="100"
+                      rx="5"
+                      fill="#60a5fa"
+                      opacity="0.7"
+                    />
+                    <rect
+                      x="210"
+                      y="90"
+                      width="160"
+                      height="20"
+                      rx="5"
+                      fill="#93c5fd"
+                    />
+                    <rect
+                      x="210"
+                      y="125"
+                      width="120"
+                      height="15"
+                      rx="5"
+                      fill="#bfdbfe"
+                    />
+                    <rect
+                      x="210"
+                      y="155"
+                      width="140"
+                      height="15"
+                      rx="5"
+                      fill="#bfdbfe"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Busy Buy</h3>
+                <p class="project-description">
+                  Busy Buy is a simple e-commerce web application built using
+                  React.js, JavaScript, HTML, CSS, Bootstrap, Firebase
+                  Authentication, and Firestore Database. The application allows
+                  users to browse products, filter items by category, manage
+                  their shopping cart, and place orders seamlessly. User
+                  authentication is implemented using Firebase, ensuring secure
+                  login and signup functionality. The platform provides a smooth
+                  shopping experience with real-time data management through
+                  Firestore.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JavaScript</span>
+                  <span class="tech-tag">ReactJs</span>
+                  <span class="tech-tag">Firebase</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/RaviAanjana/BusyBuy"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="https://ravi-busy-buy-app.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+
+            <article class="project-card">
+              <div class="project-image">
+                <div class="project-image-placeholder">
+                  <svg
+                    width="100%"
+                    height="100%"
+                    viewBox="0 0 400 250"
+                    xmlns="http://www.w3.org/2000/svg"
+                    aria-label="Project 2 placeholder"
+                  >
+                    <rect width="400" height="250" fill="#dcfce7" />
+                    <rect
+                      x="30"
+                      y="40"
+                      width="340"
+                      height="30"
+                      rx="5"
+                      fill="#10b981"
+                    />
+                    <circle
+                      cx="110"
+                      cy="140"
+                      r="50"
+                      fill="#34d399"
+                      opacity="0.7"
+                    />
+                    <rect
+                      x="190"
+                      y="100"
+                      width="180"
+                      height="15"
+                      rx="5"
+                      fill="#6ee7b7"
+                    />
+                    <rect
+                      x="190"
+                      y="130"
+                      width="150"
+                      height="15"
+                      rx="5"
+                      fill="#a7f3d0"
+                    />
+                    <rect
+                      x="190"
+                      y="160"
+                      width="170"
+                      height="15"
+                      rx="5"
+                      fill="#a7f3d0"
+                    />
+                  </svg>
+                </div>
+              </div>
+              <div class="project-content">
+                <h3 class="project-title">Play-Stack</h3>
+                <p class="project-description">
+                  A sleek, responsive web-based music player built with vanilla
+                  HTML, CSS, and JavaScript. It allows users to browse a curated
+                  music library, filter tracks by genre, play songs with album
+                  artwork, and seamlessly navigate between tracks. Users can
+                  also create and manage custom playlists, with support for both
+                  light and dark themes. The modern, gradient-based UI is fully
+                  optimized for desktop, tablet, and mobile devices.
+                </p>
+                <div class="project-tech">
+                  <span class="tech-tag">HTML5</span>
+                  <span class="tech-tag">CSS3</span>
+                  <span class="tech-tag">JAVASCRIPT</span>
+                </div>
+                <div class="project-links">
+                  <a
+                    href="https://github.com/RaviAanjana/Music-Player"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    GitHub
+                  </a>
+                  <a
+                    href="https://play-stack.netlify.app/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="project-link"
+                  >
+                    Live Demo
+                  </a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="contact">
+        <div class="container">
+          <h2 class="section-title">Get In Touch</h2>
+          <p class="section-subtitle">
+            Feel free to reach out for collaborations or opportunities
+          </p>
+          <div class="contact-content">
+            <div class="contact-info">
+              <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-details">
+                  <h3>Email</h3>
+                  <a href="mailto:raviaanjana14@gmail.com"
+                    >raviaanjana14@gmail.com</a
+                  >
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">💼</div>
+                <div class="contact-details">
+                  <h3>LinkedIn</h3>
+                  <a
+                    href="www.linkedin.com/in/ravi-aanjana-b477401a9"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    [linkedin.com/in/ravi-aanjana]
+                  </a>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">💻</div>
+                <div class="contact-details">
+                  <h3>GitHub</h3>
+                  <a
+                    href="https://github.com/RaviAanjana"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                  >
+                    [github.com/RaviAanjana]
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2026 Ravi Aanjana. All Rights Reserved.</p>
+          <p>
+            Built for Oasis Infobyte Web Development & Designing Internship -
+            Level 1, Task 2
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Optional JavaScript for mobile menu -->
+    <script src="script.js"></script>
+  </body>
+</html>
